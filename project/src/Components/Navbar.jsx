@@ -42,13 +42,13 @@ export default function Navbar() {
       <Box
         bg={useColorModeValue("gray.100", "gray.900")}
         px={4}
-        border="2px solid black"
+        // border="2px solid black"
         background="rgb(255,255,255)"
       >
         <Flex
           h={"100px"}
           alignItems={"center"}
-          w={{ sm: "94%", md: "84%", lg: "84%" }}
+          w={{base:'94%', sm: "94%", md: "84%", lg: "84%" }}
           ml={{ sm: "3%", md: "8%", lg: "8%" }}
           justifyContent={"space-between"}
           // border="1px solid blue"
