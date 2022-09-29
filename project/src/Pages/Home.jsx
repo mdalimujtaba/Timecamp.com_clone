@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import { DivContainingClock } from "../Components/DivContainingClock";
 import FirstDiv from "../Components/firstDiv";
+import { ForEmployees } from "../Components/ForEmployess";
 import Navbar from "../Components/Navbar";
 
 function Home(){
@@ -9,7 +10,7 @@ function Home(){
             <Navbar/>
             <FirstDiv/>
             <DivContainingClock/>
-
+            <ForEmployees/>
         </Box>
     )
 }
