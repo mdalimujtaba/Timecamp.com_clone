@@ -8,10 +8,17 @@ import {
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
+  Button,
+  Link,
 } from "@chakra-ui/react";
+import { ForEnterprises } from "./ForEnterprise";
+import { ForManager } from "./ForManager";
 export function ForEmployees() {
   return (
-    <Box border={"1px solid black"} h={["400px"]} w="100%">
+    <>
+        <Box 
+    // border={"1px solid black"} 
+    h={["400px"]} w="100%">
       <Box
         textAlign={"center"}
         display={"flex"}
@@ -29,10 +36,12 @@ export function ForEmployees() {
         ml={["10%"]}
         mt={"50px"}
       >
-        <Box border={"1px solid black"} h={["600px"]}>
+        <Box 
+        // border={"1px solid black"}
+         h={["800px",'700px','750px',"800px"]}>
           <Text
             color={"rgb(53,211,108)"}
-            border="1px solid yellow"
+            // border="1px solid yellow"
             fontWeight={600}
             mt={"50px"}
             w="80%"
@@ -42,7 +51,7 @@ export function ForEmployees() {
           <Text mt={"20px"} w="80%" fontSize={"36px"} fontWeight={700}>
             Track your employees working time
           </Text>
-          <Text mt={"20px"} w="80%" fontWeight={400}>
+          <Text mt={"20px"} w="80%" fontWeight={500}>
             Log working hours of your employees automatically or manually and
             make sure they are billed fairly.
           </Text>
@@ -93,19 +102,27 @@ export function ForEmployees() {
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
+          <Box mt={"100px"} w="80%"  display="flex" justifyContent={['center','center','flex-start','flex-start']}>
+           <Link _hover={{textDecoration:'none'}}> <Button _hover={{ bg:'green'}} bg={'rgb(37,207,96)'} p="25px 40px 25px 40px" color='white' borderRadius='25px'>Track employees time</Button></Link>
+          </Box>
         </Box>
         <Box
-          border={"1px solid blue"}
-          h={["600px"]}
-          display="flex"
-          alignItem="center"
+        //   border={"1px solid blue"}
+          h={[ '300px','300px','300px',"800px"]}
+         
         >
           <Image
             w={["100%"]}
+            height={['90%','90%','60%','50%']}
+            mt={['10px','10px','200px','200px']}
             src="https://cdn-m.timecamp.com/img/greenbranding/features/img-home-features.svg"
           />
         </Box>
       </SimpleGrid>
+      <ForManager/>
+      {/* <ForEnterprises/> */}
     </Box>
+    
+    </>
   );
 }
