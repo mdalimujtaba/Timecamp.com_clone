@@ -5,15 +5,16 @@ import { ForEmployees } from "../Components/ForEmployess";
 import { ForEnterprises } from "../Components/ForEnterprise";
 import { ForManager } from "../Components/ForManager";
 import Navbar from "../Components/Navbar";
+import { ProductTourDiv } from "../Components/ProductTourDiv";
 
 function Home(){
     return(
         <Box >
-            <Navbar/>
+            <Navbar />
             <FirstDiv/>
             <DivContainingClock/>
             <ForEmployees/>
-           
+           <ProductTourDiv/>
         </Box>
     )
 }

@@ -12,6 +12,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { ForEnterprises } from "./ForEnterprise";
+import { ForHR } from "./ForHR";
 import { ForManager } from "./ForManager";
 export function ForEmployees() {
   return (
@@ -20,6 +21,7 @@ export function ForEmployees() {
         // border={"1px solid black"}
         h={["auto"]}
         w="100%"
+        
       >
         <Box
           textAlign={"center"}
@@ -51,7 +53,9 @@ export function ForEmployees() {
             >
               FOR EMPLOYEES
             </Text>
-            <Text mt={"20px"} w="80%" fontSize={"36px"} fontWeight={700}>
+            <Text mt={"20px"} w="80%"  fontSize={["28px", "28px", "36px", "36px", "36px"]}
+            fontWeight={[600, 600, 600, 700, 700]}
+            lineHeight={[1,1,1.2,1.5,1.5]}>
               Track your employees working time
             </Text>
             <Text mt={"20px"} w="80%" fontWeight={500}>
@@ -143,6 +147,7 @@ export function ForEmployees() {
         </SimpleGrid>
         <ForManager />
         <ForEnterprises />
+        <ForHR/>
       </Box>
     </>
   );

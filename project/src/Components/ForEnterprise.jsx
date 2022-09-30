@@ -14,8 +14,10 @@ import {
 export function ForEnterprises() {
   return (
     <Box  
-    // border={"1px solid black"} 
-    h={["fit-content"]} w="100%">
+    border={"1px solid black"} 
+    h={["fit-content"]} w="100%"
+    
+    >
       
       <SimpleGrid
         columns={[1, 1, 2, 2]}
@@ -37,7 +39,9 @@ export function ForEnterprises() {
           >
             ENTERPRISE
           </Text>
-          <Text mt={"20px"} w="80%" fontSize={"36px"} fontWeight={700}>
+          <Text mt={"20px"} w="80%"  fontSize={["28px", "28px", "36px", "36px", "36px"]}
+            fontWeight={[600, 600, 600, 700, 700]}
+            lineHeight={[1,1,1.2,1.5,1.5]}>
             Try enterprise time tracking at the highest level
           </Text>
           <Text mt={"20px"} w="80%" fontWeight={500}>

@@ -44,6 +44,11 @@ export default function Navbar() {
         px={4}
         // border="2px solid black"
         background="rgb(255,255,255)"
+        position={'sticky'}
+        z-index='1030'
+        top={0}
+        right={0}
+        left={0}
       >
         <Flex
           h={"100px"}
