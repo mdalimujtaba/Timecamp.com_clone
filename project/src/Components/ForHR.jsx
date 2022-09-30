@@ -11,16 +11,20 @@ import {
   Button,
   Link,
 } from "@chakra-ui/react";
-export function ForManager() {
+export function ForHR() {
   return (
-    <Box 
-    // border={"1px solid black"}
-     h={["fit-content"]} w="100%" >
+    <Box
+      border={"1px solid black"}
+      h={["fit-content"]}
+      w="100%"
+      
+    >
       <SimpleGrid
         columns={[1, 1, 2, 2]}
         // border="1px solid blue"
         w={["80%"]}
         ml={["10%"]}
+        mt={"50px"}
       >
         <Box
           //  border={"1px solid blue"}
@@ -31,7 +35,7 @@ export function ForManager() {
             w={["100%"]}
             height={["90%", "90%", "60%", "50%"]}
             mt={["10px", "10px", "200px", "200px"]}
-            src="https://cdn-m.timecamp.com/img/greenbranding/features/tools-integrations.svg"
+            src="https://cdn-m.timecamp.com/img/greenbranding/features/attendance-features.svg"
           />
         </Box>
         <Box
@@ -45,16 +49,21 @@ export function ForManager() {
             mt={"50px"}
             w="80%"
           >
-            FOR MANAGERS
+            FOR HR
           </Text>
-          <Text mt={"20px"} w="80%"  fontSize={["28px", "28px", "36px", "36px", "36px"]}
+          <Text
+            mt={"20px"}
+            w="80%"
+            fontSize={["28px", "28px", "36px", "36px", "36px"]}
             fontWeight={[600, 600, 600, 700, 700]}
-            lineHeight={[1,1,1.2,1.5,1.5]}>
-            Track project time and budget easier than ever before
+            lineHeight={[1,1,1.2,1.5,1.5]}
+          >
+            Check Timesheets and control attendance in one place
           </Text>
           <Text mt={"20px"} w="80%" fontWeight={500}>
-            Stay on top of your team’s performance and create accurate resource
-            estimates for all the projects.
+            With TimeCamp you can forget about endless stacks of papers! Take
+            advantage of convenient and easy to use tools to support your daily
+            HR and payroll work.
           </Text>
           <Accordion mt={"50px"} allowToggle>
             <AccordionItem>
@@ -63,15 +72,14 @@ export function ForManager() {
                   _expanded={{ color: "black", fontWeight: 500 }}
                 >
                   <Box flex="1" textAlign="left">
-                    Ensure project profitability by analyzing reports
+                    Track attendance automatically
                   </Box>
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                TimeCamp provides you with all the data you need to analyze the
-                projects’ performance to ensure your team always stays on track.
-                Look at the clear graphics and get a better view of the time
-                tracked!
+                TimeCamp allows both you and your employees to keep an eye on
+                their absence, sick days, or vacation leaves. Track attendance
+                and working hours easily as never before. tracked!
               </AccordionPanel>
             </AccordionItem>
 
@@ -81,13 +89,14 @@ export function ForManager() {
                   _expanded={{ color: "black", fontWeight: 500 }}
                 >
                   <Box flex="1" textAlign="left">
-                    Integrate with other tools for better performance
+                    Check and approve employees Timesheets
                   </Box>
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                Use seamless and quick setup to track time directly from a tool
-                you already use, or import your project structure into TimeCamp.
+                Enjoy the benefits of fully automated timesheet submissions -
+                quickly approve or reject them and leave notes to make sure the
+                employees understand what needs to be done to get approved.
               </AccordionPanel>
             </AccordionItem>
             <AccordionItem>
@@ -96,14 +105,14 @@ export function ForManager() {
                   _expanded={{ color: "black", fontWeight: 500 }}
                 >
                   <Box flex="1" textAlign="left">
-                    Track your activities automatically
+                    Integrate with payroll tools to work faster
                   </Box>
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4}>
-                No more guessing! With TimeCamp you will get reasonable
-                estimates for your projects and keep an eye on the resources
-                usage.
+                Make sure your employees are paid fairly! Use TimeCamp to
+                connect the attendance data with payroll tools to create payroll
+                lists with just a few clicks.
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
@@ -122,7 +131,7 @@ export function ForManager() {
                 color="white"
                 borderRadius="25px"
               >
-                Increase team productivity
+                Make HR's work easier
               </Button>
             </Link>
           </Box>
@@ -136,7 +145,7 @@ export function ForManager() {
             w={["100%"]}
             height={["90%", "90%", "60%", "50%"]}
             mt={["10px", "10px", "200px", "200px"]}
-            src="https://cdn-m.timecamp.com/img/greenbranding/features/tools-integrations.svg"
+            src="https://cdn-m.timecamp.com/img/greenbranding/features/attendance-features.svg"
           />
         </Box>
       </SimpleGrid>
