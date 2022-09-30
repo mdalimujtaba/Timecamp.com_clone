@@ -7,24 +7,26 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionPanel,
-  AccordionIcon,
   Button,
   Link,
 } from "@chakra-ui/react";
-import { ForManager } from "./ForManager";
+
 export function ForEnterprises() {
   return (
-    
+    <Box  
+    // border={"1px solid black"} 
+    h={["fit-content"]} w="100%">
+      
       <SimpleGrid
         columns={[1, 1, 2, 2]}
-        border="1px solid blue"
+        // border="1px solid blue"
         w={["80%"]}
         ml={["10%"]}
         
       >
         <Box
           // border={"1px solid black"}
-          h={["800px", "700px", "750px", "800px"]}
+          h={["auto", "700px", "750px", "800px"]}
         >
           <Text
             color={"rgb(53,211,108)"}
@@ -97,15 +99,18 @@ export function ForEnterprises() {
             w="80%"
             display="flex"
             justifyContent={["center", "center", "flex-start", "flex-start"]}
+            ml={['10%','10%','0%','0%']}
+            // border="1px solid black"
           >
             <Link _hover={{ textDecoration: "none" }}>
-              {" "}
+              
               <Button
                 _hover={{ bg: "green" }}
                 bg={"rgb(37,207,96)"}
-                p="25px 40px 25px 40px"
+                p={["20px 10px 20px 10px","25px 40px 25px 40px","25px 40px 25px 40px","25px 40px 25px 40px"]}
                 color="white"
                 borderRadius="25px"
+                
               >
                 Contact for customized solution
               </Button>
@@ -118,12 +123,13 @@ export function ForEnterprises() {
         >
           <Image
             w={["100%"]}
-            height="90%"
-            mt={["10px", "10px", "200px", "200px"]}
+            height={['90%','90%','60%','50%']}
+            mt={['10px','10px','200px','200px']}
             src="https://cdn-m.timecamp.com/img/greenbranding/features/project-structure.svg"
           />
         </Box>
       </SimpleGrid>
+    </Box>
       
     
   );
