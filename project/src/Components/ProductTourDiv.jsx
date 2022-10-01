@@ -1,8 +1,8 @@
 import { Box, Button, Image, SimpleGrid, Text } from "@chakra-ui/react";
 export function ProductTourDiv() {
   return (
-    <Box h={"550px"} 
-    // border={"1px solid red"}
+    <Box h={"auto"} 
+    border={"1px solid red"}
     >
       <Box bg={"rgb(0,0,0)"} h={["auto", "450px", "450px", "450px"]} w="100%">
         <SimpleGrid

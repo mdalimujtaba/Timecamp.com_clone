@@ -131,6 +131,7 @@ export default function FirstDiv() {
                   padding="20px"
                   boxShadow="xl"
                   variant="unstyled"
+                  
                 />
                 <Text
                   fontSize={14}
