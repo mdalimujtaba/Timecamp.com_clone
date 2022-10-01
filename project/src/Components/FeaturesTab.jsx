@@ -27,16 +27,17 @@ export default function Features(){
          <Menu isOpen={isOpen} >
               <MenuButton
               varient='ghost'
-                as={Button}
-                rightIcon={<ChevronDownIcon />}
-                // border="none"
+                
                 onMouseEnter={onOpen}
                 onMouseLeave={onClose}
+                fontWeight={500}
                 backgroundColor="white"
-                _hover={{ color: "green" ,background:"white"}}
+                _hover={{ color: "green" ,backgroundColor:"white"}}
+                border={'none'}
                 p={0}
               >
                 Features
+                {<ChevronDownIcon />}
               </MenuButton>
               <MenuList onMouseEnter={onOpen} onMouseLeave={onClose} p={0}>
                 <MenuItem
