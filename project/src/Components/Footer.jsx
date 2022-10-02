@@ -24,10 +24,10 @@ import {
   export default function Footer() {
     return (
       <Box
-       border={'1px solid black'}
+    //    border={'1px solid black'}
         color={useColorModeValue('gray.700', 'gray.200')}>
-        <Container as={Stack} maxW={'6xl'} py={10} mt={'70px'}  border={'1px solid black'}>
-          <SimpleGrid columns={{ base: 1, sm: 2, md: 6,lg:6,xl:6 }} spacing={8}  border={'1px solid black'}>
+        <Container as={Stack} maxW={'6xl'} py={10} mt={'70px'}  >
+          <SimpleGrid columns={{ base: 1, sm: 2, md: 6,lg:6,xl:6 }} spacing={8}  >
             <Stack align={['center','center','flex-start','flex-start']}>
               <ListHeader>Product</ListHeader>
               <Link href={'#'} color="rgb(125,125,128)" _hover={{color:'rgb(250,218,124)'}}>Overview</Link>

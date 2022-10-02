@@ -33,9 +33,11 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 import Features from "./FeaturesTab";
 import Integrations from "./IntegrationTab";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -120,13 +122,11 @@ export default function Navbar() {
               </Text>
             </Link>
 
-            <Link
-              _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-            >
-              <Text fontWeight={500} bg={"white"}>
+           
+              <Text fontWeight={500} bg={"white"} onClick={()=>navigate("/login")} cursor={'pointer'}>
                 Sign in
               </Text>
-            </Link>
+            
             <Button
               bg={"rgb(247,184,1)"}
               color="white"
@@ -178,14 +178,10 @@ export default function Navbar() {
                   Book a Demo
                 </Text>
               </Link>
-
-              <Link
-                _hover={{ bg: "white", color: "green", textDecoration: "none" }}
-              >
-                <Text fontWeight={500} bg={"white"}>
-                  Sign in
+              <Text fontWeight={500} bg={"white"} onClick={()=>navigate("/login")} cursor={'pointer'}>
+             Sign in
                 </Text>
-              </Link>
+              
               <Button
                 bg={"rgb(247,184,1)"}
                 color="white"

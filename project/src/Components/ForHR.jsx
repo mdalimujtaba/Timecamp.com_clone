@@ -14,7 +14,7 @@ import {
 export function ForHR() {
   return (
     <Box
-      border={"1px solid black"}
+      // border={"1px solid black"}
       h={["fit-content"]}
       w="100%"
       
