@@ -13,7 +13,7 @@ import {
 import { MinusIcon, AddIcon } from "@chakra-ui/icons";
 export function FAQ() {
   return (
-    <Box h={"auto"} mt={["100px"]} mb={['50px']}
+    <Box h={"auto"} mt={["100px"]} mb={['120px']}
     //  border="1px solid black"
      >
       <Box

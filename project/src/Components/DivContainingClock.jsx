@@ -3,7 +3,7 @@ import { Box, Button, Flex, Heading, Image } from "@chakra-ui/react";
 export function DivContainingClock() {
   return (
     <>
-      <Box  border={"1px solid black"} w={"100%"} display={"flex"} justifyContent={"center"} position ="relative" mt={'100px'}
+      <Box   w={"100%"} display={"flex"} justifyContent={"center"} position ="relative" mt={'100px'}
       mb="100px">
         <Flex
           borderRadius={"20px"}
